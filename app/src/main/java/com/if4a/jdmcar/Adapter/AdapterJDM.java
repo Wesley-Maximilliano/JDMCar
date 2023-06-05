@@ -39,7 +39,7 @@ public class AdapterJDM extends RecyclerView.Adapter<AdapterJDM.VHJdm>{
         holder.tvProdusen.setText(MJ.getProdusen());
         holder.tvMasaProduksi.setText(MJ.getMasa_produksi());
         holder.tvSejarah.setText(MJ.getSejarah());
-        holder.tvGambar.setText(MJ.getGambar());
+        holder.tvGambar.setText(MJ.getGambar_mobil());
     }
 
     @Override

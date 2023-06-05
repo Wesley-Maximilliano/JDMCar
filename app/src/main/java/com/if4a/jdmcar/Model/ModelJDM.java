@@ -1,7 +1,7 @@
 package com.if4a.jdmcar.Model;
 
 public class ModelJDM {
-    private  String id,nama_mobil,produsen,masa_produksi, sejarah, gambar;
+    private  String id,nama_mobil,produsen,masa_produksi, sejarah, gambar_mobil;
 
     public String getId() {
         return id;
@@ -23,7 +23,7 @@ public class ModelJDM {
         return sejarah;
     }
 
-    public String getGambar() {
-        return gambar;
+    public String getGambar_mobil() {
+        return gambar_mobil;
     }
 }

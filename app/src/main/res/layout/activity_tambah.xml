@@ -55,7 +55,7 @@
 
 
     <Button
-        android:id="@+id/btn_simpan"
+        android:id="@+id/btn_tambah"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginTop="16dp"
