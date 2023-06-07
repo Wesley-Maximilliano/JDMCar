@@ -15,6 +15,9 @@
         android:theme="@style/Theme.JDMCar"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.SplashScreenActivity"
             android:exported="false" />
         <activity
