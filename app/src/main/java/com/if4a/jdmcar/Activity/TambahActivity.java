@@ -75,7 +75,7 @@ public class TambahActivity extends AppCompatActivity {
                 String pesan = response.body().getPesan();
 
 
-                Toast.makeText(TambahActivity.this, "Kode : " + kode +"Pesan: " + pesan, Toast.LENGTH_SHORT).show();
+                Toast.makeText(TambahActivity.this, "Kode : " + kode +" Pesan: " + pesan, Toast.LENGTH_SHORT).show();
                 finish();
             }
 

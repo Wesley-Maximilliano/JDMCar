@@ -21,4 +21,21 @@ public interface APIRequestData {
             @Field("sejarah") String sejarah,
             @Field("gambar_mobil") String gambar_mobil
     );
+
+    @FormUrlEncoded
+    @POST("pab/update.php")
+    Call<ModelResponse> ardUpdate(
+            @Field("id") String id,
+            @Field("nama_mobil") String nama_mobil,
+            @Field("produsen") String produsen,
+            @Field("masa_produksi") String masa_produksi,
+            @Field("sejarah") String sejarah,
+            @Field("gambar_mobil") String gambar_mobil
+    );
+
+    @FormUrlEncoded
+    @POST("pab/delete.php")
+    Call<ModelResponse> ardDelete(
+            @Field("id") String id
+    );
 }
