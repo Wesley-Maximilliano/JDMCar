@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="6dp"
     android:elevation="32dp">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="6dp"
         android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_gambar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/baseline_person_24"
+            />
 
         <TextView
             android:id="@+id/tv_id"
@@ -26,21 +34,27 @@
             android:layout_height="wrap_content"
             android:text="Nama Mobil"
             android:textSize="21sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_below="@id/tv_id"
+            android:layout_toRightOf="@id/iv_gambar"/>
 
         <TextView
             android:id="@+id/tv_produsen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Produsen"
-            android:textSize="21sp" />
+            android:textSize="21sp"
+            android:layout_below="@id/tv_nama"
+            android:layout_toRightOf="@id/iv_gambar"/>
 
         <TextView
             android:id="@+id/tv_masa_produksi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Masa Produksi"
-            android:textSize="21sp" />
+            android:textSize="21sp"
+            android:layout_below="@id/tv_produsen"
+            android:layout_toRightOf="@id/iv_gambar"/>
 
 
         <TextView
@@ -50,15 +64,11 @@
             android:text="Sejarah"
             android:textSize="21sp"
             android:ellipsize="end"
-            android:maxLines="3" />
+            android:maxLines="3"
+            android:layout_below="@id/tv_masa_produksi"
+            android:layout_toRightOf="@id/iv_gambar"/>
 
-        <TextView
-            android:id="@+id/tv_gambar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Gambar"
-            android:textSize="21sp"
-            android:maxLines="1"/>
-    </LinearLayout>
+
+    </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
